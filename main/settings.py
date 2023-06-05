@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-n*($#%a&a$xsos=5if$%ag_bn8&6tkrm)sm@v7e+p@wr&!kdcg
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['cuivt.onrender.com']
+ALLOWED_HOSTS = ['cuivirtualtour.onrender.com']
 
 
 # Application definition
