@@ -131,6 +131,14 @@ STATICFILES_DIRS = [
 
 ]
 
+#Render
+
+import dj_database_url
+
+DATABASES = {
+        'default': dj_datbase_url.parse('postgres://cuivt_db_user:Zegf1pvCDvFWas4UXpa6B7muHoZ6BINS@dpg-chuu6dm7avj345fdh1qg-a.singapore-postgres.render.com/cuivt_db')
+}
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
