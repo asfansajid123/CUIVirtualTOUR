@@ -15,7 +15,6 @@ from pathlib import Path
 import pymysql
 pymysql.install_as_MySQLdb()
 
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -23,12 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-import environ
-
-env = environ.Env()
-environ.Env.read_env()
-
+# SECURITY WARNING: keep the secret key used in production secret
 SECRET_KEY = 'django-insecure-n*($#%a&a$xsos=5if$%ag_bn8&6tkrm)sm@v7e+p@wr&!kdcg'
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -137,12 +131,10 @@ STATICFILES_DIRS = [
 
 ]
 
-#Render
-
 import dj_database_url
 
 DATABASES = {
-        'default': dj_datbase_url.parse('postgres://cuivt_db_user:Zegf1pvCDvFWas4UXpa6B7muHoZ6BINS@dpg-chuu6dm7avj345fdh1qg-a.singapore-postgres.render.com/cuivt_db')
+        'default': dj_database_url.parse('postgres://cuivt_db_user:Zegf1pvCDvFWas4UXpa6B7muHoZ6BINS@dpg-chuu6dm7avj345fdh1qg-a.singapore-postgres.render.com/cuivt_db')
 }
 
 
